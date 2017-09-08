@@ -16,29 +16,42 @@
 </head>
 <body>
 <!--header-->
-	<nav class="navbar navbar-default">
-		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand"><img src="images/logo.svg" /></a>
-				<ul class="nav navbar-nav">
-					<li class="dropdown">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">东莞 <span class="caret"></span></a>
-					  <ul class="dropdown-menu">						
-						<li><a href="#">北京</a></li>
-						<li><a href="#">临忻</a></li>
-						<li><a href="#">烟台</a></li>
-						<li><a href="#">西安</a></li>
-					  </ul>
-					</li>
-      			</ul>
-			</div>
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="#">内行</a></li>
-					<li><a href="#">新房</a></li>
-					<li><a href="#">房产资讯</a></li>
-				</ul>
-			</div>
+<nav class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">				
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="sr-only">下拉</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>	
+			<a class="navbar-brand" href="#"><img src="images/logo.svg" /></a>				
 		</div>
-	</nav>
+
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<ul class="nav navbar-nav navbar-left">
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">东莞 <span class="caret"></span></a>
+				  <ul class="dropdown-menu">						
+					<li><a href="#">北京</a></li>
+					<li><a href="#">临忻</a></li>
+					<li><a href="#">烟台</a></li>
+					<li><a href="#">西安</a></li>
+				  </ul>
+				</li>
+			</ul>
+			<form class="navbar-form navbar-right">
+				<a href="#" class="btn btn-primary">登录</a>
+				<a href="#" class="btn btn-primary">注册</a>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">内行</a></li>
+				<li><a href="#">新房</a></li>
+				<li><a href="#">房产资讯</a></li>
+			</ul>				
+		</div>
+
+	</div>
+</nav>
 <!--header end-->
