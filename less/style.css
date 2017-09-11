@@ -51,6 +51,7 @@ nav.navbar-default .container .navbar-collapse .navbar-nav.navbar-right li {
   nav.navbar-default .container .navbar-collapse .navbar-nav.navbar-right li {
     height: 40px !important;
     border-bottom: 1px solid #f8f8f8;
+    background: #fff;
   }
 }
 nav.navbar-default .container .navbar-collapse .navbar-nav.navbar-right li a {
