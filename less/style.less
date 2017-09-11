@@ -1,4 +1,228 @@
-.jiang{
-	background: #000; 
-	width: 250px;
+//@blue:#143994;
+@blue:#33a3f4;
+@nav-height:90px;
+@heiti:'微软雅黑','Microsoft Yahei';
+body{
+	background:#fff;
+	font-family: @heiti;
 }
+nav.navbar-default{
+	border: none;
+	height: @nav-height;
+	min-height: @nav-height;
+	margin-bottom:0px;
+	.container{
+		.navbar-header{
+			.navbar-brand{
+				height: @nav-height;				
+				img{
+					height: 60px;
+					margin-top: 2px;
+				}
+			}
+			.navbar-toggle{
+				margin-top: 28px;
+				&:hover,&:focus{
+					background:#f8f8f8;
+					
+				}
+			}
+		}
+		.navbar-collapse.in{
+			overflow-y:visible!important;	
+			
+		}
+		.navbar-collapse{
+			background: #fff;
+			line-height: @nav-height;
+			@media(max-width: 750px){				
+				line-height: 40px;
+			}
+			.navbar-form{
+				margin: 0;
+				.btn-primary{
+					height: 30px;	
+					padding: 0 11px;
+					line-height: 30px;
+					font-weight: 100;
+				}
+			}
+			.navbar-nav.navbar-right{
+				li{
+					@media(max-width: 750px){						
+						height:40px !important;		
+						border-bottom: 1px solid #f8f8f8;
+					}
+					height: @nav-height;
+					a{
+						height: @nav-height;
+						line-height: @nav-height;
+						padding: 0 20px;
+						font-size: 16px ;
+						font-weight: normal;
+						@media(max-width: 750px){
+							height: 50px;
+							line-height: 50px;
+						}
+						&:hover{
+							color:@blue;
+						}
+					}
+					a.active{
+						color:@blue;
+					}
+				}
+			}
+			.navbar-nav{
+				height: @nav-height;
+				@media(max-width: 750px){
+					height: 50px;					
+				}
+				.dropdown{
+					height: @nav-height;
+					@media(max-width: 750px){
+						height: 50px;							
+					}
+					.dropdown-toggle{
+						height: @nav-height;
+						font-weight: normal;
+						font-size: 16px;
+						font-family: @heiti;
+						padding: 0 25px;
+						background: #fff;
+						line-height: @nav-height;
+						@media(max-width: 750px){
+							height: 50px;
+							line-height: 50px;
+						}
+					}
+					.dropdown-menu{
+						z-index: 9999;
+						border:none;
+						box-shadow: 0 5px 15px rgba(0,0,0,.1);
+						background: #fff;
+						a{
+							font-size:14px;
+							&:hover{
+								background:@blue;
+							}
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}
+.carousel{
+	
+	.count-box{
+		box-shadow:0 0 25px rgba(0,0,0,.1);
+		border-radius: 5px;
+		padding: 0 20px; 
+		position: absolute;
+		width: 300px;
+		height: 290px;
+		background: rgba(255,255,255,.9);
+		display: block;
+		z-index: 100;
+		h3{
+			font-size: 22px;
+			font-weight: 100;
+			text-align: center;
+		}
+		
+		form{			
+			>.btn-primary{
+				margin-top: 15px;
+			}
+			.input-group{
+				margin-top: 10px;
+				.input-group-btn {
+					
+					border-right: none;
+					
+					.btn{
+						font-size: 13px;
+						min-height: 0;
+						width: 80px;	
+						cursor: default;
+						
+					}
+				}
+				input{
+					border-left: none;
+				}
+				select{
+					border-left: none;
+					font-size: 13px;
+				}
+			}
+		}
+	}
+	.carousel-control{
+	
+		background-color: none ;
+		background-image: none;
+		top: 50%;
+		margin-top: -36px;
+		.iconfont{
+			font-size: 60px;
+		}
+		&:hover,&:focus{
+			background-color: none ;
+			background-image: none;
+		}
+	}
+}
+.container.home01{	
+	margin-top: 30px;
+	.col-xs-02{	
+		margin-left: 10%;
+		width:12%;
+		float: left;
+		margin-left: 10%;
+		text-align: center;
+		img{
+			width:100%;
+			max-width: 120px;
+		}
+		p{
+			padding: 10px 0 0 0 ;
+			font-size: 20px;
+			font-family: @heiti;
+			color: #060606;			
+			color: #333;
+			
+		}
+	}		
+}
+/****重写***/
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background: none;   
+}
+
+
+
+/***辅助类***/
+.size14{
+	font-size:14px !important;	
+}
+.size12{
+	font-size:12px !important;	
+}
+.text-blue{
+	color:@blue!important;
+}
+
+.text-333{
+	color:#333 !important;
+}
+.text-666{
+	color:#666 !important;
+}
+.text-999{
+	color:#999 !important;
+}
+
+

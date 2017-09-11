@@ -8,6 +8,8 @@
 	<meta name="keywords" content=""/>
 	<meta name="description" content=""/>	
 	<link rel="stylesheet" href="css/quirk.css"/>
+	<link rel="stylesheet" href="css/iconfont.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
 <!--[if lt IE 10]>
   <script src="lib/html5shiv/html5shiv.js"></script>
   <script src="lib/respond/respond.src.js"></script>
@@ -25,9 +27,8 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>	
-			<a class="navbar-brand" href="#"><img src="images/logo.svg" /></a>				
+			<a class="navbar-brand" href="#"><img src="images/logo.png" /></a>				
 		</div>
-
 		<div class="collapse navbar-collapse" id="navbar-collapse">
 			<ul class="nav navbar-nav navbar-left">
 				<li class="dropdown">
@@ -41,14 +42,15 @@
 				</li>
 			</ul>
 			<form class="navbar-form navbar-right">
-				<a href="#" class="btn btn-primary">登录</a>
-				<a href="#" class="btn btn-primary">注册</a>
+				<a href="#" class="btn btn-primary" >登录</a>
+				<a href="#" class="btn btn-primary btn-stroke btn-stroke-thin" >注册</a>
 			</form>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">首页</a></li>
-				<li><a href="#">内行</a></li>
-				<li><a href="#">新房</a></li>
-				<li><a href="#">房产资讯</a></li>
+			<ul class="nav navbar-nav navbar-right hidden-sm">
+				<li><a href="#">头条</a></li>
+				<li><a href="#">大咖</a></li>
+				<li><a href="#">智能配房</a></li>
+				<li><a href="#">议房神算</a></li>
+				<li><a href="#">新房推荐</a></li>
 			</ul>				
 		</div>
 
