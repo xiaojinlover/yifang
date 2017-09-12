@@ -11561,6 +11561,9 @@ body {
   background: #fff;
   font-family: '微软雅黑', 'Microsoft Yahei';
 }
+* {
+  transition: all .4s;
+}
 nav.navbar-default {
   border: none;
   height: 90px;
@@ -11745,6 +11748,99 @@ nav.navbar-default .container .navbar-collapse .navbar-nav .dropdown .dropdown-m
   font-family: '微软雅黑', 'Microsoft Yahei';
   color: #060606;
   color: #333;
+}
+.home02 {
+  margin-top: 10px;
+}
+.home02 > .col-xs-3 {
+  padding: 10px;
+}
+.home02 > .col-xs-3 .thumbnail {
+  padding: 0 0 150% 0;
+  height: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.home02 > .col-xs-3 .thumbnail img {
+  width: 100%;
+}
+.home02 > .col-xs-3 .thumbnail .caption {
+  width: 100%;
+  height: 40%;
+  bottom: -31%;
+  background: #33a3f4;
+  position: absolute;
+}
+.home02 > .col-xs-3 .thumbnail .caption h4 {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+@media (max-width: 992px) {
+  .home02 > .col-xs-3 .thumbnail .caption h4 {
+    font-size: 16px;
+  }
+}
+.home02 > .col-xs-3 .thumbnail .caption p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 0px;
+  line-height: 158%;
+}
+@media (max-width: 992px) {
+  .home02 > .col-xs-3 .thumbnail .caption p {
+    font-size: 12px;
+    line-height: 125% !important;
+  }
+}
+.home02 .col-xs-9 {
+  padding: 0;
+}
+.home02 .col-xs-9 .col-xs-4 {
+  padding: 10px;
+}
+.home02 .col-xs-9 .col-xs-4 .thumbnail {
+  border: none;
+  padding: 0 0 150% 0;
+  height: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.home02 .col-xs-9 .col-xs-4 .thumbnail img {
+  width: 100%;
+}
+.home02 .col-xs-9 .col-xs-4 .thumbnail .caption {
+  bottom: -31%;
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+}
+.home02 .col-xs-9 .col-xs-4 .thumbnail .caption h4 {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+@media (max-width: 992px) {
+  .home02 .col-xs-9 .col-xs-4 .thumbnail .caption h4 {
+    font-size: 16px;
+  }
+}
+.home02 .col-xs-9 .col-xs-4 .thumbnail .caption ul li {
+  list-style: disc inside;
+  color: #333;
+  font-size: 14px;
+}
+@media (max-width: 992px) {
+  .home02 .col-xs-9 .col-xs-4 .thumbnail .caption ul li {
+    font-size: 12px;
+  }
 }
 /****重写***/
 .navbar-default .navbar-nav > .open > a,
