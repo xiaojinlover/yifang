@@ -6,6 +6,9 @@ body{
 	background:#fff;
 	font-family: @heiti;
 }
+*{
+	transition: all .4s;
+}
 nav.navbar-default{
 	border: none;
 	height: @nav-height;
@@ -197,6 +200,94 @@ nav.navbar-default{
 			
 		}
 	}		
+}
+.home02{
+	margin-top: 10px;
+	>.col-xs-3{
+		padding: 10px;
+		.thumbnail{
+			padding: 0 0 150% 0;
+			height: 0;
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+			img{
+				width: 100%;
+			}
+			.caption{
+				width: 100%;
+				height: 40%;
+				bottom: -31%;
+				background: @blue;
+				position: absolute;				
+				h4{
+					font-size: 18px;
+					text-align: center;
+					color: #fff;
+					margin: 0 0 5px 0;
+					font-weight: 600;
+					@media(max-width: 992px){
+						font-size: 16px;
+					}
+				}
+				p{
+					color: #fff;
+					text-align: center;
+					font-size: 14px;
+					margin-bottom: 0px;
+					line-height: 158%;
+					@media(max-width: 992px){
+						font-size: 12px;
+						line-height: 125% !important;
+					}
+				}
+			}
+		}
+	}
+	.col-xs-9{
+		padding: 0;
+		.col-xs-4{
+			padding: 10px;
+			.thumbnail{
+				border:none;
+				padding: 0 0 150% 0;
+				height: 0;
+				width: 100%;
+				position: relative;
+				overflow: hidden;
+				img{
+					width: 100%;
+				}
+				.caption{
+					bottom: -31%;
+					width: 100%;
+					height: 40%;
+					background: rgba(255,255,255,0.8);
+					position: absolute;
+					
+					h4{
+						font-size: 18px;						
+						color: #333;
+						margin: 0 0 5px 0;
+						font-weight: 600;
+						@media(max-width: 992px){
+							font-size: 16px;
+						}
+					}
+					ul{
+						li{
+							list-style: disc inside;
+							color: #333;
+							font-size: 14px;
+							@media(max-width: 992px){
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 /****重写***/
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
