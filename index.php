@@ -64,30 +64,30 @@
 <!--banner end-->
 <div class="container home01">
 	<div class="col-xs-02" style="margin-left: 0;">
-		<img class="animated fadeIn" src="images/home-icon-01.png"/>
+		<img class="" src="images/home-icon-01.png"/>
 		<p>议房头条</p>
 	</div>
 	<div class="col-xs-02">
-		<img class="animated fadeIn" src="images/home-icon-02.png"/>
+		<img class="" src="images/home-icon-02.png"/>
 		<p>百答大咖</p>
 	</div>
 	<div class="col-xs-02">
-		<img class="animated fadeIn" src="images/home-icon-03.png"/>
+		<img class="" src="images/home-icon-03.png"/>
 		<p>智能配房</p>
 	</div>
 	<div class="col-xs-02">
-		<img class="animated fadeIn" src="images/home-icon-04.png"/>
+		<img class="" src="images/home-icon-04.png"/>
 		<p>议房神算</p>
 	</div>
 	<div class="col-xs-02">
-		<img class="animated fadeIn" src="images/home-icon-05.png"/>
+		<img class="" src="images/home-icon-05.png"/>
 		<p>新房推荐</p>
 	</div>
 	<div class="clearfix"></div>
 	<br/>
 	<br/>
 	<div class="pull-left hidden-xs">
-		<div class="h3 mt5">百答大咖</div>
+		<div class="h2 mt5 text-blue">百答大咖</div>
 	</div>
 	<div class="pull-right hidden-xs">
 		<form class="pull-left form-inline">
@@ -103,7 +103,7 @@
 </div>
 <br/>
 <div class="container-fluid nopadding">
-	<img width="100%" style="min-height: 100px;" src="images/test1.png"/>
+	<img width="100%" style="min-height: 200px;" src="images/banner-test2.png"/>
 </div>
 <div class="container home02 hidden-xs">
 	<div class="col-xs-3">
@@ -122,11 +122,18 @@
 		<div class="home02-news">
 		  <ul class="nav nav-tabs" role="tablist">
 			<li role="presentation" class="active"><a href="#item1"  role="tab" data-toggle="tab">最新动态</a></li>
-			<li role="presentation"><a href="#item2" role="tab" data-toggle="tab">最新评价</a></li>			
+			<li role="presentation" style="border-left: 1px solid #e5e5e5"><a href="#item2" role="tab" data-toggle="tab">最新评价</a></li>			
 		  </ul>
 		  <div class="tab-content">
 			<div role="tabpanel" class="tab-pane active" id="item1">
-				
+				<ul class="list-unstyled">
+					<li><a href="#">张三已经与议房大咖李四达成电话咨询优惠</a></li>
+					<li><a href="#">张三已经与议房大咖李四达成电话咨询优惠</a></li>
+					<li><a href="#">张三已经与议房大咖李四达成电话咨询优惠</a></li>
+					<li><a href="#">张三已经与议房大咖李四达成电话咨询优惠</a></li>
+					<li><a href="#">张三已经与议房大咖李四达成电话咨询优惠</a></li>
+					
+				</ul>
 			</div>
 			<div role="tabpanel" class="tab-pane" id="item2">
 				
@@ -219,6 +226,25 @@
 		</div>
 	</div>
 </div> 
+<div class="container">
+	<div class="pull-left hidden-xs">
+		<div class="h2 mt5 text-blue">新房推荐</div>
+	</div>
+	<div class="pull-right hidden-xs">
+		<form class="pull-left form-inline">
+			<div class="input-group input-group-sm">
+				<input class="form-control input-sm"/>
+				<div class="input-group-btn">
+					<button class="btn btn-default btn-sm" style="min-height:0;">搜索</button>
+				</div>
+			</div>
+		</form>
+		<a class="pull-right mt5 ml10 size14 text-333" href="#">查看更多>></a>
+	</div>
+</div>
+<div class="container-fluid nopadding">
+	<img width="100%" style="min-height: 200px;" src="images/banner-test2.png"/>
+</div>
  <?php include 'footer.php';?>
 <script>
 	$( function () {
@@ -239,5 +265,6 @@
 		},function(){
 			$(this).find('.caption').css('bottom','-31%');
 		})
+		
 	} )
 </script>

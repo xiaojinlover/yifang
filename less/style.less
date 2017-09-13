@@ -1,15 +1,143 @@
 //@blue:#143994;
-@blue:#33a3f4;
+@blue:#143994;
 @nav-height:90px;
+@nav-fixed-height:60px;
 @heiti:'微软雅黑','Microsoft Yahei';
+
+.mix-transition(@times){
+	transition:@times all;
+	-webkit-transition:@times all;
+	-ms-transition:@times all;
+	-moz-transition:@times all;
+	-o-transition:@times all;
+}
+
 body{
 	background:#fff;
-	font-family: @heiti;
+	font-family: @heiti;	
 }
-*{
-	transition: all .4s;
+
+nav.navbar-fixed-top{
+	.mix-transition(1s);	
+	border: none;
+	height: @nav-fixed-height;  
+	min-height: @nav-fixed-height;
+	margin-bottom:0px;
+	background: rgba(255,255,255,.4) !important;
+	@media(max-width: 750px){
+		background: #fff!important;
+	}
+	.container{
+		.navbar-header{
+			.navbar-brand{
+				height: @nav-fixed-height;				
+				img{
+					.mix-transition(0.2s);
+					height: 30px;
+					margin-top: 2px;
+				}
+			}
+			.navbar-toggle{
+				margin-top: 18px;
+				&:hover,&:focus{
+					background:#f8f8f8;
+				}
+			}
+		}
+		.navbar-collapse.in{
+			overflow-y:visible!important;
+			
+		}
+		.navbar-collapse{
+			background: none!important;
+			.mix-transition(1s);
+			line-height: @nav-fixed-height;
+			@media(max-width: 750px){				
+				line-height: 40px;
+				background: #fff!important;
+			}
+			.navbar-form{
+				margin: 0;
+				.btn-primary{
+					height: 30px;	
+					padding: 0 11px;
+					line-height: 30px;
+					font-weight: 100;
+				}
+			}
+			.navbar-nav.navbar-right{
+				li{
+					@media(max-width: 750px){						
+						height:40px !important;		
+						border-bottom: 1px solid #f8f8f8;
+						background: #fff;
+					}
+					height: @nav-fixed-height;
+					a{
+						height: @nav-fixed-height;
+						line-height: @nav-fixed-height;
+						padding: 0 20px;
+						font-size: 16px ;
+						font-weight: normal;
+						@media(max-width: 750px){
+							height: 50px;
+							line-height: 50px;
+						}
+						
+						&:hover{
+							color:@blue;
+						}
+					}
+					a.active{
+						color:@blue;
+					}
+				}
+			}
+			.navbar-nav{
+				height: @nav-fixed-height;
+				@media(max-width: 750px){
+					height: 50px;					
+				}
+				.dropdown{
+					height: @nav-fixed-height;
+					@media(max-width: 750px){
+						height: 50px;							
+					}
+					.dropdown-toggle{
+						height: @nav-fixed-height;
+						font-weight: normal;
+						font-size: 16px;
+						font-family: @heiti;
+						padding: 0 25px;					
+						
+						line-height: @nav-fixed-height;
+						@media(max-width: 750px){
+							height: 50px;
+							line-height: 50px;
+							background: #fff;
+							
+						}
+					}
+					.dropdown-menu{
+						z-index: 9999;
+						border:none;
+						box-shadow: 0 5px 15px rgba(0,0,0,.1);
+						background: #fff;
+						a{
+							font-size:14px;
+							&:hover{
+								background:@blue;
+							}
+						}
+					}
+				}
+				
+			}
+		}
+	}
 }
-nav.navbar-default{
+nav.navbar-no-fixed{
+	.mix-transition(1s);
 	border: none;
 	height: @nav-height;  
 	min-height: @nav-height;
@@ -19,6 +147,7 @@ nav.navbar-default{
 			.navbar-brand{
 				height: @nav-height;				
 				img{
+					.mix-transition(0.2s);
 					height: 60px;
 					margin-top: 2px;
 				}
@@ -36,6 +165,7 @@ nav.navbar-default{
 			
 		}
 		.navbar-collapse{
+			.mix-transition(1s);
 			background: #fff;
 			line-height: @nav-height;
 			@media(max-width: 750px){				
@@ -92,12 +222,12 @@ nav.navbar-default{
 						font-weight: normal;
 						font-size: 16px;
 						font-family: @heiti;
-						padding: 0 25px;
-						background: #fff;
+						padding: 0 25px;						
 						line-height: @nav-height;
 						@media(max-width: 750px){
 							height: 50px;
 							line-height: 50px;
+							background: #fff;
 						}
 					}
 					.dropdown-menu{
@@ -119,9 +249,15 @@ nav.navbar-default{
 	}
 }
 .carousel{
-	
+	.carousel-inner{
+		.item{
+			img{
+				min-height: 300px;		
+			}
+		}
+	}
 	.count-box{
-		box-shadow:0 0 25px rgba(0,0,0,.1);
+		box-shadow:0 0 25px rgba(0,0,0,.1); 
 		border-radius: 5px;
 		padding: 0 20px; 
 		position: absolute;
@@ -202,10 +338,79 @@ nav.navbar-default{
 	}		
 }
 .home02{
+	.home02-news{
+		
+		box-shadow: 0 0 25px rgba(0,0,0,0.2);
+		margin-top: 23px;
+		border: 1px solid #e5e5e5;
+		height: 0;
+		padding-bottom: 150%;
+		overflow: hidden;
+		ul.nav{
+			border-bottom: 1px solid #e5e5e5;
+			background: none;
+			li{
+				width: 50%;
+				
+				a{
+					font-family:@heiti;
+					padding: 10px 0;
+					text-align: center;
+					font-size: 16px;
+					font-weight: normal;
+					background: none;
+					color: #333;
+				}
+				
+			}
+			li.active{
+				a{
+					color: @blue;
+				}				
+			}
+		}
+		.tab-content{
+			.tab-pane {
+				padding: 10px;
+				ul{
+					li{
+						position: relative;
+						&::before{
+							content: '';
+							font-size: 0; 
+							border-width: 4px;  
+							border-color: #666;  
+							border-right-width: 0;  
+							border-style: dashed;  
+							border-left-style: solid;  
+							border-top-color: transparent;  
+							border-bottom-color: transparent;  
+							position: absolute;
+							left: -8px;
+							top:9px;
+						}
+						line-height: 26px;
+						margin: 8px 3px 8px 15px;
+						font-size: 14px;
+												
+						a{	
+							color:#666;
+							&:hover{
+								color:@blue;
+							}
+							
+						}
+					}
+				}
+			}
+		}
+	}
 	margin-top: 10px;
 	>.col-xs-3{
 		padding: 10px;
+		padding-top: 0;
 		.thumbnail{
+			transition: all 1s;
 			padding: 0 0 150% 0;
 			height: 0;
 			width: 100%;
@@ -215,17 +420,18 @@ nav.navbar-default{
 				width: 100%;
 			}
 			.caption{
+				.mix-transition(0.4s);
 				width: 100%;
 				height: 40%;
 				bottom: -31%;
 				background: @blue;
 				position: absolute;				
 				h4{
-					font-size: 18px;
+					font-size: 16px;
 					text-align: center;
 					color: #fff;
 					margin: 0 0 5px 0;
-					font-weight: 600;
+					font-weight: 500;
 					@media(max-width: 992px){
 						font-size: 16px;
 					}
@@ -248,6 +454,7 @@ nav.navbar-default{
 		padding: 0;
 		.col-xs-4{
 			padding: 10px;
+			padding-top: 0;
 			.thumbnail{
 				border:none;
 				padding: 0 0 150% 0;
@@ -259,17 +466,18 @@ nav.navbar-default{
 					width: 100%;
 				}
 				.caption{
+					.mix-transition(0.4s);
 					bottom: -31%;
 					width: 100%;
 					height: 40%;
-					background: rgba(255,255,255,0.8);
+					background: rgba(20,57,148,0.2);
 					position: absolute;
 					
 					h4{
-						font-size: 18px;						
+						font-size: 16px;						
 						color: #333;
 						margin: 0 0 5px 0;
-						font-weight: 600;
+						font-weight: 500;
 						@media(max-width: 992px){
 							font-size: 16px;
 						}
